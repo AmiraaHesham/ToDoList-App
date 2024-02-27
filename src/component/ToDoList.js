@@ -28,12 +28,12 @@ const ToDoList = () => {
 
     const getAllTasks = async () => {
         const res = await axios.get('http://localhost:8000/tasks')
-        settasks(res.data);
+        await settasks(res.data);
     }
 
     const getAllTasksCompleted = async () => {
         const res = await axios.get('http://localhost:8000/completedTask')
-        settaskscompleted(res.data);
+        await settaskscompleted(res.data);
 
     }
 
@@ -42,7 +42,7 @@ const ToDoList = () => {
             const res = await axios.post('http://localhost:8000/tasks', {
                 title: inputtask
             })
-            getAllTasks(res)
+            await getAllTasks(res)
             inputRef.current.value = ''
         }
     }
