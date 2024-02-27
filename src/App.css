@@ -1,0 +1,186 @@
+body {
+    background: linear-gradient(220deg, #ADBC9F 0%, #436850 100%);
+    color: #12372A;
+    width: 1500px;
+    height: 1500px;
+    font-size: 30px;
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+.ToDoList {
+    border-radius: 10px;
+    margin: 80px 400px;
+    padding: 20px 50px;
+    width: 40%;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(180deg, #436850 0%, #ADBC9F 100%);
+    position: absolute;
+}
+
+#btnAdd,
+#btnSave {
+    background: #12372A;
+    margin: 0px 0px 0px 5px;
+    width: 30%;
+    height: 30px;
+    color: bisque;
+    border: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btnAdd:hover,
+#btnSave:hover {
+    border: 2px solid#FBFADA;
+    background: #436850;
+    cursor: pointer;
+}
+
+input {
+    word-wrap: break-word;
+    font-weight: 400px;
+    border-radius: 10px;
+    width: 90%;
+    height: 35PX;
+    font-size: 25px;
+    background: #FBFADA;
+    border: none;
+}
+
+::placeholder {
+    color: #12372ac4;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btnupd,
+#btndel {
+    background: none;
+    color: #12372A;
+    border-radius: 6px;
+    margin: 2px 5px;
+    font-size: 25px;
+}
+
+
+.btn-del-upd {
+
+    padding: 2px 10px;
+    margin: 2px 2px;
+
+}
+
+#btnupd:hover {
+    color: #ADBC9F;
+    cursor: pointer;
+
+}
+
+#btndel:hover {
+    color: rgb(87, 25, 3);
+    cursor: pointer;
+
+}
+
+#btndelall,
+#btnCancel {
+    background: #12372A;
+    margin: 10px 10px 10px 5px;
+    width: 30%;
+    height: 30px;
+    color: bisque;
+    border: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btndelall:hover,
+#btnCancel:hover {
+    border: 2px solid #FBFADA;
+    background: rgb(87, 25, 3);
+    cursor: pointer;
+
+
+}
+
+.addTask {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+#showCompleted {
+    margin-bottom: 0px;
+    justify-content: space-between;
+    color: #12372A;
+    font-size: 25px;
+    width: 50%;
+}
+
+#showCompleted:hover {
+    color: #436850;
+}
+
+
+#widthDiv {
+    width: 80%;
+    height: 40px;
+    margin: 15px 0px 10px 0px;
+    color: #12372A;
+}
+
+#widthDiv:hover {
+    color: #12372A;
+    border-radius: 7px;
+    background: #ADBC9F;
+}
+
+#completedTask {
+    color: #436850;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+#completedTask:hover {
+    color: #12372A;
+
+
+}
+
+.done {
+    text-decoration: line-through;
+    color: #12372aa0;
+
+}
+
+/* .done:hover {
+    color: #12372A;
+} */
+
+#space {
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.To-Do-container {
+    width: 500px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+
+}
